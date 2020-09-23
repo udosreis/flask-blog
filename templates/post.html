@@ -1,9 +1,10 @@
 {% extends "layout.html" %}
 
 {% block body %}
-<h1>{{ post["title"] }}</h1>
-<p>{{ post["date"] }}</p>
-{% for paragraph in post["content"] %}
-    <p>{{ paragraph }}</p>
-{% endfor %}
+    <h1 id="title">{{ post["title"] }}</h1>
+    <p id="subtitle">{{ post["author"] }} - {{ post["date"] }}</p>
+    {% for paragraph in post["content"] %}
+        <p class="post-content">{{ paragraph }}</p>
+        <br>
+    {% endfor %}
 {% endblock %}

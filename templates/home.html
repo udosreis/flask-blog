@@ -1,10 +1,16 @@
 {% extends "layout.html" %}
 
 {% block body %}
-    <h1>Tasks</h1>
-    <ul>
+    <h1 id="title">My Epic Blog</h1>
+    <img id="home-img" src="{{ url_for('static',filename='profilepic.png') }}" />
+    <div id="posts">
         {% for post in posts %}
-            <li><a href="{{ post["date"] }}/{{ post["title"] }}"">{{ post["title"] }}</a></li>
+            <div class="post-thumbnail">
+                <a href='{{ post["date"] }}/{{ post["title"] }}'>
+                    <p class="thumbnail-title">{{ post["title"] }}</p>
+                    <p class="thumbnail-preview">{{ post["content"][0][0:50] }}</p>
+                </a>
+            </div>
         {% endfor %}
-    </ul>
+    </div>
 {% endblock %}

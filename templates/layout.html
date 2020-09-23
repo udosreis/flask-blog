@@ -2,10 +2,13 @@
 
 <html lang="en">
     <head>
-        <title>Ugo Way</title>
+        <title>My Epic Blog</title>
+        <link rel="stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles.css') }}">
     </head>
     <body>
-        {% block body %}
-        {% endblock %}
+        <div id="wrapper">
+            {% block body %}
+            {% endblock %}
+        </div>
     </body>
 </html>
