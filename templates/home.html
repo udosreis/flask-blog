@@ -1,0 +1,10 @@
+{% extends "layout.html" %}
+
+{% block body %}
+    <h1>Tasks</h1>
+    <ul>
+        {% for post in posts %}
+            <li><a href="{{ post["date"] }}/{{ post["title"] }}"">{{ post["title"] }}</a></li>
+        {% endfor %}
+    </ul>
+{% endblock %}

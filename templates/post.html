@@ -1,0 +1,9 @@
+{% extends "layout.html" %}
+
+{% block body %}
+<h1>{{ post["title"] }}</h1>
+<p>{{ post["date"] }}</p>
+{% for paragraph in post["content"] %}
+    <p>{{ paragraph }}</p>
+{% endfor %}
+{% endblock %}
