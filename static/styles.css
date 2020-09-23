@@ -1,0 +1,42 @@
+* {
+    font-family: Inter-Regular;
+    letter-spacing: 0;
+    text-decoration: none;
+    color: #2E2E2E;
+    margin: 0px;
+}
+
+#wrapper {
+    width: 30%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+#title {
+    font-family: JosefinSans-Thin_Regular;
+    font-size: 48px;
+    text-align: center;
+}
+#subtitle {
+    font-size: 12px;
+    text-align: center;
+    margin-bottom: 25px;
+}
+#home-img {
+    width: auto;
+    max-width: 100%;
+    max-height: 200%;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.post-thumbnail {
+    margin-bottom: 10px;
+}
+.thumbnail-title {
+    font-size: 28px;
+}
+.thumbnail-preview {
+    font-size: 18px;
+    color: #4A4A4A;
+}
