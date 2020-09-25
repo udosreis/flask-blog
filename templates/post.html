@@ -1,21 +1,35 @@
 {% extends "layout.html" %}
 
 {% block back %}
-<a href="\"><imr src=""/></a>
+<a href="\"><img src="{{ url_for('static',filename='back-arrow.png') }}"/></a>
 {% endblock %}
 
 {% block body %}
     <h2>{{ post["title"] }}</h1>
     <div class="post-info">
-        <imr src=""/>
-        <p id="author">{{ post["author"] }}</p>
-        <p id="date">{{ post["date"] }}</p>
-
-        <p id="read-time">{{ post["readtime"] }}</p>
+        <div class="author-date">
+            <table>
+                <tr>
+                    <td><img src="{{ url_for('static',filename='profilepic.png') }}" id="author-img"/></td>
+                    <td>
+                        <p id="author">{{ post["author"] }}</p>
+                        <p id="date">{{ post["date"].year }}-{{ post["date"].month }}-{{ post["date"].day }}</p>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div id="read-time">
+            <p>{{ post["readtime"] }} minutes</p>
+        </div>
     </div>
+    <div id="post">
     {% for paragraph in post["content"] %}
-        <p class="post-paragraph">{{ paragraph }}</p>
-        <p class="post-heading">{{ paragraph }}</p>
+        {% if paragraph["type"] %}
+        <p class="post-heading">{{ paragraph["text"] }}</p>
+        {% else %}
+        <p class="post-paragraph">{{ paragraph["text"] }}</p>
+        {% endif %}
         <br>
     {% endfor %}
+    </div>
 {% endblock %}

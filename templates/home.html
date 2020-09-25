@@ -3,18 +3,20 @@
 {% block body %}
     <img src="{{ url_for('static',filename='welcome.png') }}" id="welcome-text"/>
     {% for post in posts %}
-        <div class="post-thumbnail">
-            <a href='{{ post["date"] }}/{{ post["title"] }}' class="post-thumbnail-foreground">
-                <div class="thumbnail-post-preview">
-                    <p class="thumbnail-title">{{ post["title"] }}</p>
-                    <p class="thumbnail-preview">{{ post["content"][0][0:99] }}...</p>
+        <a href='{{ post["date"].year }}/{{ post["date"].month }}/{{ post["date"].day }}/{{ post["title"] }}' class="post-thumbnail-a">
+            <div class="post-thumbnail">
+                <div class="post-thumbnail-foreground">
+                    <div class="thumbnail-post-preview">
+                        <p class="thumbnail-title">{{ post["title"] }}</p>
+                        <p class="thumbnail-preview">{{ post["preview"] }}...</p>
+                    </div>
+                    <div class="thumbnail-read-time">
+                        <p><span class="minutes">{{ post["readtime"] }}</span><br>MINUTE<br>READ</p>
+                    </div>
+                    <div class="thumbnail-shadow"></div>
                 </div>
-                <div class="thumbnail-read-time">
-                    <p><span class="minutes">{{ post["readtime"] }}</span><br>MINUTE<br>READ</p>
-                </div>
-            </a>
-            <div class="thumbnail-shadow"></div>
-        </div>
+            </div>
+        </a>
     {% endfor %}
     <p id="no-more-posts">No more posts :(</p>
 {% endblock %}

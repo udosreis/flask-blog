@@ -10,22 +10,52 @@
 header {
     width: 100%;
     height: 10%;
+    top: 0;
+    position: sticky;
+    background-color: #FFFFFF;
 }
 header div {
     background-image: linear-gradient(90deg, #3023AE 0%, #53A0FD 48%, #B4EC51 100%);
     height: 4px;
     width: 100%;
 }
+header table {
+    width: 40%;
+    min-width: 450px;
+    margin-right: auto;
+    margin-left: auto;
+}
+@keyframes shrink {
+    0% {
+        transform: scaleY(1);
+    }
+    50% {
+        transform: scaleY(0.7);
+    }
+    100% {
+        transform: scaleY(1);
+    }
+}
+header .arrows {
+    width: 50px;
+}
+header .arrows:hover {
+    animation: 0.75s ease-out 0s 1 shrink;
+}
 header h1 {
     font-family: JosefinSans-Thin_Bold;
     font-size: 48px;
     text-align: center;
-    padding: 24px;
+    padding: 24px 0px;
+}
+header img {
+    height: 50px;
 }
 
 /* Content */
 #wrapper {
     width: 40%;
+    min-width: 450px;
     margin-right: auto;
     margin-left: auto;
 }
@@ -44,17 +74,31 @@ header h1 {
     position: relative;
     margin-bottom: 23px;
 }
-.post-thumbnail-foregorund {
+.post-thumbnail-foreground {
     height: 89px;
+}
+@keyframes shake {
+    0% {
+        transform: transformY(0px);
+    }
+    50% {
+        transform: translateY(-5px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
+.post-thumbnail-foreground:hover > .thumbnail-shadow {
+    animation: 0.75s ease-out 0s 1 shake;
 }
 .thumbnail-post-preview {
     float: left;
-    width: 85%;
+    width: 80%;
 }
 .thumbnail-read-time {
     float: right;
-    width: 12%;
-    height: 100%;
+    width: 10%;
+    height: inherit;
     font-family: Inter-Regular_Light;
     font-size: 14px;
     text-align: center;
@@ -73,11 +117,17 @@ header h1 {
     font-size: 24px;
     margin-top: 9px;
     margin-left: 16px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    max-height: 2.4em;
 }
 .thumbnail-preview {
     font-size: 18px;
     color: #9B9B9B;
     margin-left: 16px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    max-height: 2.4em;
 }
 .thumbnail-shadow {
     background-image: linear-gradient(90deg, #3023AE 0%, #53A0FD 48%, #B4EC51 100%);
@@ -99,4 +149,75 @@ header h1 {
     color: #9B9B9B;
     text-align: center;
     margin-top: 50px;
+}
+
+/* Post */
+/* <h2>{{ post["title"] }}</h1>
+    <div class="post-info">
+        <imr src=""/>
+        <p id="author">{{ post["author"] }}</p>
+        <p id="date">{{ post["date"] }}</p>
+
+        <p id="read-time">{{ post["readtime"] }}</p>
+    </div>
+    {% for paragraph in post["content"] %}
+        <p class="post-paragraph">{{ paragraph }}</p>
+        <p class="post-heading">{{ paragraph }}</p>
+        <br>*/
+h2 {
+    font-family: Inter-Regular_SemiBold;
+    font-size: 36px;
+    margin: 20px 0px;
+}
+.post-paragraph {
+    font-family: Inter-Regular_Medium;
+    font-size: 18px;
+}
+.post-heading {
+    font-family: Inter-Regular_Medium;
+    font-size: 24px;
+}
+.post-info {
+    width: 100%;
+    height: 60px;
+    display: table;
+}
+.author-date {
+    float: left;
+    width: 80%;
+}
+#author-img {
+    border-radius: 50%;
+    width: 56px;
+    height: auto;
+}
+#author {
+    font-family: Inter-Regular_SemiBold;
+    font-size: 22px;
+}
+#date {
+    font-family: Inter-Regular_Medium;
+    font-size: 18px;
+}
+#read-time {
+    height: 100%;
+    display: table-cell;
+    vertical-align: middle;
+}
+.post-info #read-time p {
+    float: right;
+    padding: 2px;
+    max-width: 100px;
+    min-width: 50px;
+    font-family: Inter-Regular_Black;
+    font-size: 18px;
+    color: #FFFFFF;
+    background-image: linear-gradient(-180deg, #0A00FF 0%, #00D0FF 100%);
+    border-radius: 50px / 50px;
+    padding: 5px;
+    text-align: center;
+}
+#post {
+    margin-top: 29px;
+    width: 100%;
 }
