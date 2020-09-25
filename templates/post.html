@@ -1,11 +1,21 @@
 {% extends "layout.html" %}
 
+{% block back %}
+<a href="\"><imr src=""/></a>
+{% endblock %}
+
 {% block body %}
-    <h1 id="title">{{ post["title"] }}</h1>
-    <p id="subtitle">{{ post["author"] }} - {{ post["date"] }}</p>
+    <h2>{{ post["title"] }}</h1>
+    <div class="post-info">
+        <imr src=""/>
+        <p id="author">{{ post["author"] }}</p>
+        <p id="date">{{ post["date"] }}</p>
+
+        <p id="read-time">{{ post["readtime"] }}</p>
+    </div>
     {% for paragraph in post["content"] %}
-        <p class="post-content">{{ paragraph }}</p>
+        <p class="post-paragraph">{{ paragraph }}</p>
+        <p class="post-heading">{{ paragraph }}</p>
         <br>
     {% endfor %}
-    <a href='\' id="back-btn">⬅️ Back</a>
 {% endblock %}

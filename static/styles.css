@@ -6,41 +6,97 @@
     margin: 0px;
 }
 
+/* Header */
+header {
+    width: 100%;
+    height: 10%;
+}
+header div {
+    background-image: linear-gradient(90deg, #3023AE 0%, #53A0FD 48%, #B4EC51 100%);
+    height: 4px;
+    width: 100%;
+}
+header h1 {
+    font-family: JosefinSans-Thin_Bold;
+    font-size: 48px;
+    text-align: center;
+    padding: 24px;
+}
+
+/* Content */
 #wrapper {
-    width: 30%;
+    width: 40%;
     margin-right: auto;
     margin-left: auto;
 }
 
-#title {
-    font-family: JosefinSans-Thin_Regular;
-    font-size: 48px;
-    text-align: center;
+/* Home Page */
+#welcome-text {
+    width: 100%;
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
-#subtitle {
-    font-size: 12px;
-    text-align: center;
-    margin-bottom: 25px;
-}
-#home-img {
-    width: auto;
-    max-width: 100%;
-    max-height: 200%;
-    margin-top: 25px;
-    margin-bottom: 25px;
-}
-
 .post-thumbnail {
-    margin-bottom: 10px;
+    background: #FFFFFF;
+    border-radius: 10px;
+    width: 100%;
+    height: 94px;
+    position: relative;
+    margin-bottom: 23px;
+}
+.post-thumbnail-foregorund {
+    height: 89px;
+}
+.thumbnail-post-preview {
+    float: left;
+    width: 85%;
+}
+.thumbnail-read-time {
+    float: right;
+    width: 12%;
+    height: 100%;
+    font-family: Inter-Regular_Light;
+    font-size: 14px;
+    text-align: center;
+    margin-right: 13px;
+    display: table;
+}
+.thumbnail-read-time p {
+    display: table-cell;
+    vertical-align: middle;
+}
+.thumbnail-read-time .minutes {
+    font-family: Inter-Regular_Bold;
+    font-size: 20px;
 }
 .thumbnail-title {
-    font-size: 28px;
+    font-size: 24px;
+    margin-top: 9px;
+    margin-left: 16px;
 }
 .thumbnail-preview {
     font-size: 18px;
-    color: #4A4A4A;
+    color: #9B9B9B;
+    margin-left: 16px;
 }
-
-#back-btn {
-    font-size: 28px;
+.thumbnail-shadow {
+    background-image: linear-gradient(90deg, #3023AE 0%, #53A0FD 48%, #B4EC51 100%);
+    border-radius: 10px;
+    z-index: -1;
+    position: absolute;
+    top: 5px;
+    width: 100%;
+    height: 94px;
+    -webkit-filter: blur(5px);
+    -moz-filter: blur(5px);
+    -o-filter: blur(5px);
+    -ms-filter: blur(5px);
+    filter: blur(5px);
+}
+#no-more-posts {
+    font-family: Inter-Regular_Light;
+    font-size: 36px;
+    color: #9B9B9B;
+    text-align: center;
+    margin-top: 50px;
 }

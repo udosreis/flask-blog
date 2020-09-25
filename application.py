@@ -10,7 +10,9 @@ def load_posts():
         if file.endswith(".txt"):
             with open("posts" + os.path.sep + file) as rf:
                 post = {}
+                doc = ""
                 post["title"] = rf.readline().rstrip("\n")
+                post["author"] = rf.readline().rstrip("\n")
                 post["date"] = rf.readline().rstrip("\n")
                 post["content"] = []
                 paragraph = ""
@@ -20,7 +22,9 @@ def load_posts():
                         paragraph = ""
                     else:
                         paragraph += line.rstrip("\n")
+                    doc += line.rstrip("\n") + " "
                 post["content"].append(paragraph)
+                post["readtime"] = round(len(doc.split()) / 275)
                 posts.append(post)
     return posts
 
