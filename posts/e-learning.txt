@@ -1,36 +1,25 @@
 E-Learning
 Ugo Dos Reis
 2020-09-19
-Corona, Coronavirus, Virus, Covid-19, Epidemic, Mask
-Image: Pixabay
+<p>With COVID around, most places where people meet have been closed or have had restrictions applied: sporting events have no more supporters, some restaurants can only do takeaway, gyms have shut down, and schools have moved to an online format.
+<p>I have been part of this colossal societal experiment, where most activities are remote. Amid the pandemic, the university sent us back home, and we continued our courses through the use of e-learning.
 
-With COVID around, most places where people meet have been closed or have had restrictions applied: sporting events have no more supporters, some restaurants can only do takeaway, gyms have shut down, and schools have moved to an online format.
+<h1>The Experience
+<p>So far, online classes have been a mixed experience. On the one hand, attending online lectures isn't a major change due to the software. We can listen to the professor and see what he is writing, be broken down into groups to work on worksheets and discuss our solutions, and ask questions. On the other hand, we don't get to see most of our classmates and creating connections is harder because everything is done through a computer screen. Tests are also an issue because the anti-cheat programs are very cumbersome and have brought forward a handful of problems.
 
-I have been part of this colossal societal experiment, where most activities are remote. Amid the pandemic, the university sent us back home, and we continued our courses through the use of e-learning.
+<h1>How To Do Well
+<p>Despite all of this, we have to accept and adapt. School is going to be online, regardless of whether we like it or not, and we all need strategies to maximize our chances of doing well.
 
-The Experience
+<h2>Organization
+<p>To make sure I don't forget important assignments and tests, I created a calendar with lecture times, test dates, work, etc. It lets me know when I can do homework and what I should focus on. On top of that, in the morning, I make a daily to-do list to make sure I finish everything that has to get done.
 
-So far, online classes have been a mixed experience. On the one hand, attending online lectures isn't a major change due to the software. We can listen to the professor and see what he is writing, be broken down into groups to work on worksheets and discuss our solutions, and ask questions. On the other hand, we don't get to see most of our classmates and creating connections is harder because everything is done through a computer screen. Tests are also an issue because the anti-cheat programs are very cumbersome and have brought forward a handful of problems.
-How To Do Well
+<h2>Lifestyle
+<p>Mental health is always important, regardless of whether you are working in person or remotely. This means that we all need methods to stay well and avoid burn-out. I generally implement two methods-exercising regularly and having a balanced diet. 
 
-Despite all of this, we have to accept and adapt. School is going to be online, regardless of whether we like it or not, and we all need strategies to maximize our chances of doing well.
+<p>There are more studies than I can count that show these two lifestyles not only keep you healthier physically, but also reduce stress, anxiety, and the risk of depression. It doesn't stop there. The CDC says eating healthier and exercising can increase academic performance, including grades and standardized test scores. Exercising and eating healthy will also make you sleep better, which means you will feel more refreshed in the morning. 
 
-Organization
+<p>Given all that, there is no reason not to eat healthily and exercise, both of which I will be doing.
 
-Checklist, Goals, Box, Notebook, Pen, People, Man, Hand
-Image: Pixabay
-
-To make sure I don't forget important assignments and tests, I created a calendar with lecture times, test dates, work, etc. It lets me know when I can do homework and what I should focus on. On top of that, in the morning, I make a daily to-do list to make sure I finish everything that has to get done.
-
-Lifestyle
-
-Dumbbells, Training, Fitness, Gym, Workout, Exercise
-Image: Pixabay
-
-Mental health is always important, regardless of whether you are working in person or remotely. This means that we all need methods to stay well and avoid burn-out. I generally implement two methods-exercising regularly and having a balanced diet. 
-There are more studies than I can count that show these two lifestyles not only keep you healthier physically, but also reduce stress, anxiety, and the risk of depression. It doesn't stop there. The CDC says eating healthier and exercising can increase academic performance, including grades and standardized test scores. Exercising and eating healthy will also make you sleep better, which means you will feel more refreshed in the morning. 
-Given all that, there is no reason not to eat healthily and exercise, both of which I will be doing.
-The Verdict
-
-So far, I would give this experience a positive review. It has allowed me to follow classes while being in a warm country where I can go to the beach and eat homemade meals instead of campus food. The available technology has led to a mostly positive learning experience and has allowed for some social events like the CSC290 social. However, keeping a routine has been made more difficult due to all the distractions at home.
-That is all for this week! Au revoir!
+<h1>The Verdict
+<p>So far, I would give this experience a positive review. It has allowed me to follow classes while being in a warm country where I can go to the beach and eat homemade meals instead of campus food. The available technology has led to a mostly positive learning experience and has allowed for some social events like the CSC290 social. However, keeping a routine has been made more difficult due to all the distractions at home.
+<p>That is all for this week! Au revoir!

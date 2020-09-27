@@ -1,27 +1,27 @@
 Bonjour tout le monde!
 Ugo Dos Reis
 2020-09-13
-Bonjour! Hola! Bună ziua! Olá! Hello!
+<p>Bonjour! Hola! Bună ziua! Olá! Hello!
 
-Only one of those was looked up. Can you guess which one?
+<p>Only one of those was looked up. Can you guess which one?
 
-You undoubtedly didn't guess "Hello" as I hope it is apparent that I can communicate in English. 
+<p>You undoubtedly didn't guess "Hello" as I hope it is apparent that I can communicate in English. 
 
-If you chose "Bonjour", then you are out of luck considering I am French and certainly speak French. 
+<p>If you chose "Bonjour", then you are out of luck considering I am French and certainly speak French. 
 
-How about "Hola"? Well, you are mistaken. I not only lived in Spain for 3 years but also attended a Spanish school for one year, where I learned Spanish.
+<p>How about "Hola"? Well, you are mistaken. I not only lived in Spain for 3 years but also attended a Spanish school for one year, where I learned Spanish.
 
-Maybe you think it's "Bună ziua" - Correct! That is Romanian for "hello" and, although I lived in Romania, I never learned the language.
+<p>Maybe you think it's "Bună ziua" - Correct! That is Romanian for "hello" and, although I lived in Romania, I never learned the language.
 
-If "Olá" was your guess, then you were almost right! Portuguese is the language I am least competent in, but I do know the basics. 
- 
+<p>If "Olá" was your guess, then you were almost right! Portuguese is the language I am least competent in, but I do know the basics. 
 
-My name is Ugo. I am a second-year student studying Computer Science at the University of Toronto Mississauga. Why computer science? Not due to it adding to my language tally, but because it gives me the tools to solve impactful problems. I also love computer science as it is essentially about thinking critically to find the optimal way to solve a problem, which usually has multiple ways of being done.
 
-In my quest to learn CS and obtain my degree, I am taking CSC207, CSC236, CSC290, CSC492, MAT232, and STA256 this fall. These are all typical CS classes except for 290, which is about communication. In that course, I am hoping to improve my writing creativity and interpersonal skills by using new words and structures. Additionally, I am hoping to meet new people and form new relationships. 
+<p>My name is Ugo. I am a second-year student studying Computer Science at the University of Toronto Mississauga. Why computer science? Not due to it adding to my language tally, but because it gives me the tools to solve impactful problems. I also love computer science as it is essentially about thinking critically to find the optimal way to solve a problem, which usually has multiple ways of being done.
 
-Other than CS, I enjoy exercising, eating, learning (CS and non-CS things), playing video games, and did I already say eating? My favorite sport is soccer! Allez Paris! I love Creole food, a cuisine with a lot of rice, beans, and sauces based on tomatoes. If you are interested look up "rougail saucisse," a traditional dish in Réunion Island, which is where some of my family lives. 
+<p>In my quest to learn CS and obtain my degree, I am taking CSC207, CSC236, CSC290, CSC492, MAT232, and STA256 this fall. These are all typical CS classes except for 290, which is about communication. In that course, I am hoping to improve my writing creativity and interpersonal skills by using new words and structures. Additionally, I am hoping to meet new people and form new relationships. 
 
-If you want to connect or see my projects, feel free to check out my website (it's pretty cool). 
+<p>Other than CS, I enjoy exercising, eating, learning (CS and non-CS things), playing video games, and did I already say eating? My favorite sport is soccer! Allez Paris! I love Creole food, a cuisine with a lot of rice, beans, and sauces based on tomatoes. If you are interested look up "rougail saucisse," a traditional dish in Réunion Island, which is where some of my family lives. 
 
-Until next week! Au revoir!
+<p>If you want to connect or see my projects, feel free to check out my website (it's pretty cool). 
+
+<p>Until next week! Au revoir!

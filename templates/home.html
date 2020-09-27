@@ -1,7 +1,7 @@
 {% extends "layout.html" %}
 
 {% block body %}
-    <img src="{{ url_for('static',filename='welcome.png') }}" id="welcome-text"/>
+    <img src="{{ url_for('static',filename='images/welcome.png') }}" id="welcome-text"/>
     {% for post in posts %}
         <a href='{{ post["date"].year }}/{{ post["date"].month }}/{{ post["date"].day }}/{{ post["title"] }}' class="post-thumbnail-a">
             <div class="post-thumbnail">
