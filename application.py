@@ -2,7 +2,7 @@ import os
 from datetime import datetime
 from flask import Flask, render_template
 
-app = Flask(__name__, template_folder="templates")
+application = Flask(__name__, template_folder="templates")
 
 
 def load_posts():
@@ -16,7 +16,7 @@ def load_posts():
                 post["author"] = rf.readline().rstrip("\n")
                 post["date"] = datetime.strptime(rf.readline().rstrip("\n"), "%Y-%m-%d")
                 post["content"] = []
-                
+
                 img_count = 0
                 for line in rf:
                     paragraph = {"text": "", "type": "br"}
@@ -61,16 +61,16 @@ def load_posts():
 posts = load_posts()
 
 
-@app.route("/")
+@application.route("/")
 def home():
     return render_template("home.html", posts = posts)
 
 
-@app.route("/<year>/<month>/<day>/<title>")
+@application.route("/<year>/<month>/<day>/<title>")
 def post(year, month, day, title):
     for post in posts:
         if post["title"] == title and post["date"] == datetime(int(year), int(month), int(day)):
             return render_template("post.html", post = post)
 
 if __name__ == "__main__":
-    app.run()
+    application.run()
