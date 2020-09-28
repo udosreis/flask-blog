@@ -38,6 +38,8 @@
             <h5>{{ paragraph["text"] }}</h5>
         {% elif paragraph["type"] == "h6" %}
             <h6>{{ paragraph["text"] }}</h6>
+        {% elif paragraph["type"] == "a" %}
+            <a href='{{ paragraph["link"] }}'>{{ paragraph["text"] }}</a>
         {% elif paragraph["type"] == "li" %}
             {% if paragraph["text"].find(":") > 0 %}
                 <li><b>{{ paragraph["text"][:paragraph["text"].find(":")]}}</b>{{ paragraph["text"][paragraph["text"].find(":"):] }}</li>

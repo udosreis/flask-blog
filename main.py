@@ -49,6 +49,10 @@ def load_posts():
                         paragraph["text"] += "post-images/" + file.rstrip(".txt") + "-" + str(img_count) + line[4:]
                         paragraph["type"] = "img"
                         img_count += 1
+                    elif line[:3] == "<a>":
+                        paragraph["text"] += line[line.find(" ")+1:]
+                        paragraph["type"] = "a"
+                        paragraph["link"] = line[3:line.find(" ")]
                     else:
                         doc += paragraph["text"] + " "
                     post["content"].append(paragraph)

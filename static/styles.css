@@ -192,6 +192,7 @@ header img {
 }
 #post {
     margin-top: 29px;
+    margin-bottom: 5%;
     font-size: calc(1.0625px * var(--rem));
     line-height: 28px;
     width: 100%;
@@ -211,10 +212,12 @@ header img {
     margin-top: 14px;
     margin-bottom: 7px;
 }
+#post a {
+    color: rgb(74, 110, 224);
+    text-decoration: underline;
+}
 .post-image {
-    width: auto;
-    height: auto;
-    max-width: 90%;
+    width: 100%;
     display: block;
-    margin: 50px auto;
+    margin: 50px 0px;
 }
