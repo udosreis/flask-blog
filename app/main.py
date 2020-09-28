@@ -63,7 +63,8 @@ posts = load_posts()
 
 @app.route("/")
 def home():
-    return render_template("home.html", posts = posts)
+    #return render_template("home.html", posts = posts)
+    return "<h1>TEST!</h1>"
 
 
 @app.route("/<year>/<month>/<day>/<title>")
