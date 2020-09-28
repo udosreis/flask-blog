@@ -1,0 +1,54 @@
+{% extends "layout.html" %}
+
+{% block back %}
+<a href="\"><img src="{{ url_for('static',filename='images/back-arrow.png') }}"/></a>
+{% endblock %}
+
+{% block body %}
+    <h2 id="post-title">{{ post["title"] }}</h1>
+    <div class="post-info">
+        <div class="author-date">
+            <table>
+                <tr>
+                    <td><img src="{{ url_for('static',filename='images/profilepic.png') }}" id="author-img"/></td>
+                    <td>
+                        <p id="author">{{ post["author"] }}</p>
+                        <p id="date">{{ post["date"].year }}-{{ post["date"].month }}-{{ post["date"].day }}</p>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div id="read-time">
+            <p><b>{{ post["readtime"] }} minutes</b></p>
+        </div>
+    </div>
+    <div id="post">
+    {% for paragraph in post["content"] %}
+        {% if paragraph["type"] == "p" %}
+            <p>{{ paragraph["text"] }}</p>
+        {% elif paragraph["type"] == "h1" %}
+            <h1>{{ paragraph["text"] }}</h1>
+        {% elif paragraph["type"] == "h2" %}
+            <h2>{{ paragraph["text"] }}</h2>
+        {% elif paragraph["type"] == "h3" %}
+            <h3>{{ paragraph["text"] }}</h3>
+        {% elif paragraph["type"] == "h4" %}
+            <h4>{{ paragraph["text"] }}</h4>
+        {% elif paragraph["type"] == "h5" %}
+            <h5>{{ paragraph["text"] }}</h5>
+        {% elif paragraph["type"] == "h6" %}
+            <h6>{{ paragraph["text"] }}</h6>
+        {% elif paragraph["type"] == "li" %}
+            {% if paragraph["text"].find(":") > 0 %}
+                <li><b>{{ paragraph["text"][:paragraph["text"].find(":")]}}</b>{{ paragraph["text"][paragraph["text"].find(":"):] }}</li>
+            {% else %}
+                <li>{{ paragraph["text"] }}</li>
+            {% endif %}
+        {% elif paragraph["type"] == "img" %}
+            <img src='{{ url_for("static",filename=paragraph["text"]) }}' class="post-image"/>
+        {% elif paragraph["type"] == "br" %}
+            <br>
+        {% endif %}
+    {% endfor %}
+    </div>
+{% endblock %}

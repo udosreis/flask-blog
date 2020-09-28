@@ -1,0 +1,35 @@
+How to Flask
+Ugo Dos Reis
+2020-09-27
+<p>Bom dia!
+<p>As you may have noticed, the blog design changed! The new version uses Flask, HTML, and CSS, and in today's blog post, I'll talk about how I went about making my blog.
+
+<h1>What are Flask, HTML, and CSS?
+<p>First of all, I'd like to address what Flask, HTML, and CSS are:
+<li>Flask: web framework written in Python that helps with the development of web apps
+<li>HTML (Hypertext Markup Language): used to create the structure of a website
+<li>CSS (Cascading Style Sheets): used to customize the layout and design of an HTML page
+
+<p>So, why use Flask? A blog usually has two pages: a home page and an article page repeated for each post. Writing a new HTML file for every post would certainly be irritating, so Flask allows me to create a template and generate the page by inputting a text file with the content of the post.
+
+<h1>The Process
+<h2>Flask & Python
+<p>The first thing to do in any Flask project is to create the Python file in which the core of our Flask code will be. In the file, I imported Flask and setup the Flask app using "app = Flask(__name__, template_folder="templates")"  which sets a default template folder.
+img .png
+<p>Before creating the templates, I wanted to get the Flask code to work. I made a simple function, named "home," that Flask would use to generate my home page, and added "@app.route("/") on the line right before it. This line tells Flask that when someone accesses my blog, it should run the "home" function as it is my root page.
+img .png
+<p>The next function would be the article page function, which I named "post." Similarly to the home function, it has an app.route line. This time, the route takes in a year, month, day, and title parameter used to find the right post and create an article page for it.
+img .png
+<p>Before moving on, I'd like to point the variables "posts" and "post" were created by a function that takes in a directory of .txt files and parses them to make a list of all the articles.
+
+<h2>HTML & CSS (and some more Flask)
+<p>With the core of the website done, I now needed to create the templates. I quickly made a design using Sketch, which I then recreated in HTML and CSS.
+<p>In total, I have three HTML files and one CSS file:
+<li>layout.html: contains the sections of the website that used in both the homepage and article page (like the navigation bar)
+<li>home.html: extends the layout and uses Flask to list out all the articles I wrote
+<li>post.html: adds on to the layout.html page by adding the back button and the content of the article
+<li>styles.css: contains all the styling
+<p>That's it with the templates! Click here to learn about template inheritance.
+
+<h1>Final Word
+<p>Although a simplified explanation of the process, using the links in the post and some google searches, you should be able to get your blog running. That's all for this week!
