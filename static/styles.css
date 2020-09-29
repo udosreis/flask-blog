@@ -185,7 +185,7 @@ header img {
     min-width: 50px;
     font-size: 18px;
     color: #FFFFFF;
-    background-image: linear-gradient(-180deg, #0A00FF 0%, #00D0FF 100%);
+    background-image: linear-gradient(0deg, #0A00FF 0%, #00D0FF 100%);
     border-radius: 50px / 50px;
     padding: 5px;
     text-align: center;
