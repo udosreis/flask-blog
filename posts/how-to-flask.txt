@@ -29,6 +29,7 @@ img .png
 <li>home.html: extends the layout and uses Flask to list out all the articles I wrote
 <li>post.html: adds on to the layout.html page by adding the content of the article
 <li>styles.css: contains all the styling
+
 <p>If you remember, the Python file rendered the templates with a parameter. The templates access and use this parameter by using specific syntax, as well as some loops and if statements available in Flask.
 <p>That's it with the templates!
 
