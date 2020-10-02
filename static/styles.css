@@ -146,6 +146,7 @@ header img {
     color: #9B9B9B;
     text-align: center;
     margin-top: 50px;
+    margin-bottom: 50px;
 }
 
 /* Post */
@@ -198,17 +199,14 @@ header img {
     width: 100%;
 }
 #post h1 {
-    
     margin-top: 28px;
     margin-bottom: 7px;
 }
 #post h2 {
-    
     margin-top: 14px;
     margin-bottom: 7px;
 }
 #post h3 {
-    font-size: 20px;
     margin-top: 14px;
     margin-bottom: 7px;
 }
@@ -220,4 +218,63 @@ header img {
     width: 100%;
     display: block;
     margin: 50px 0px;
+}
+
+@media only screen and (max-width: 500px) {
+    header {
+        height: 7.5%;
+    }
+    header table {
+        width: 95%;
+        min-width: 0px;
+    }
+    header .arrows {
+        width: 40px;
+    }
+    header #blog-name {
+        font-size: 36px;
+        padding: 18px 0px;
+    }
+    header img {
+        height: 40px;
+    }
+
+    /* Content */
+    #wrapper {
+        width: 95%;
+        min-width: 0px;
+    }
+    .thumbnail-read-time p {
+        font-size: 12px;
+    }
+    .thumbnail-read-time .minutes {
+        font-size: 14px;
+    }
+    .thumbnail-title {
+        font-size: 20px;;
+    }
+    .thumbnail-preview {
+        font-size: 14px;;
+    }
+    #post-title {
+        font-size: 27px;
+    }
+    .post-info {
+        height: 50px;
+    }
+    #author-img {
+        width: 42px;
+    }
+    #author {
+        font-size: 18px;
+    }
+    #date {
+        font-size: 14px;
+    }
+    .post-info #read-time p b {
+        font-size: 12px;
+    }
+    #no-more-posts {
+        font-size: 27px;
+    }
 }
