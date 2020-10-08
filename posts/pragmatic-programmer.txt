@@ -8,7 +8,9 @@ Ugo Dos Reis
 
 <h2>Software Rot
 <p>The next section talks about why projects experience "software rot" (deterioration of project quality) and how to prevent such decline. I had never heard of "software rot" before, but after reading the section, I noticed something: I had experienced it.
+
 <p>The book starts with a question: why are some buildings damaged while others look brand new? Because once a broken window is not repaired immediately, people start caring less about the building leading to faster decay. The book applies this idea to code where bad design or code bring down the standard of future code, making the project decline. 
+
 <p>I found this section interesting as I have seen "software rot" happen in one of my projects. I had learned a new method of implementation that was much better than the current one but didn't replace the old code right away. This led me to write worse code, as part of the project was already subpar. Since then, I have decided to fix any issues as soon as they come up, and reading the book has confirmed my new tactic is crucial.
 
 <h2>Beta Releases
