@@ -12,7 +12,7 @@ Ugo Dos Reis
 <p>I found this section interesting as I have seen "software rot" happen in one of my projects. I had learned a new method of implementation that was much better than the current one but didn't replace the old code right away. This led me to write worse code, as part of the project was already subpar. Since then, I have decided to fix any issues as soon as they come up, and reading the book has confirmed my new tactic is crucial.
 
 <h2>Beta Releases
-<p>After "software rot," the chapter talked about "good-enough code." What is meant by this is that a program will never be perfect, and releasing a working version that's not fully polished (like a BETA version) allows for feedback. The book says people would rather have a less than perfect program today instead of having to wait for a perfect program-and I agree. I concur with the "good-enough code" principle and have used it with my portfolio website and even this blog, where I released a working version that wasn't fully finished (ex. responsiveness not fully completed and some design quirks not figured out). 
+<p>After "software rot," the chapter talked about "good-enough code." What is meant by this is that a program will never be perfect, and releasing a working version that's not fully polished (like a BETA version) allows for feedback. The book says people would rather have a less than perfect program today instead of having to wait for a perfect program-and I agree. I concur with this principle and have used it with my portfolio website and even this blog, where I released a working version that wasn't fully finished (ex. responsiveness not fully completed and some design quirks not figured out). 
 
 <h2>Passion
 <p>The book then moved on to one of the most important aspects of being a good software developer: passion.  Like in anything, passion is what separates the good from the great, and the book encourages software developers to explore new things in the field through courses, books, and other mediums. 
@@ -21,4 +21,4 @@ Ugo Dos Reis
 <p>Finally, the book mentions communication. Communicating is a huge part of being a software developer as one has to give ideas, report project progress, and write documents. To be a strong programmer, one has to choose the right moment and way of communicating. 
 
 <h2>Conclusion
-<p>Overall, I agree with the points the authors made and want to keep applying them. I will keep learning new things, whether it is through side projects or courses, I will prevent software rot, and I will release BETA versions of my programs. See you next week!
+<p>Overall, I agree with the points the authors made and want to keep applying them. I will keep learning new things, whether it is through side projects or courses, I will prevent "software rot," and I will release BETA versions of my programs. See you next week!
