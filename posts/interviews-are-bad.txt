@@ -1,4 +1,4 @@
-Is Technical Interview Performance is Arbitrary?
+Article Review - Interviews
 Ugo Dos Reis
 2020-11-15
 <p>In the article "Technical interview performance is kind of arbitrary. Here's the data," the author discusses why technical interviews are not a proper way to choose a candidate for a job. Although the graphics in the article are good, the paper is plagued by unprofessional writing, while the study ignores crucial variables when making conclusions. 
